@@ -10,6 +10,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+// import { MdInputModule, MdButtonModule } from '@angular/material';
+// import { CdkTableModule } from '@angular/cdk';
+
+import 'hammerjs';
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,12 +31,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
+    // MdInputModule, 
+    // MdButtonModule,
+    
     // RouterModule.forRoot([
     //   {path:'home', component:HomeComponent},
     //   {path:'dashboard', component:DashboardComponent}
 
     // ])
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
