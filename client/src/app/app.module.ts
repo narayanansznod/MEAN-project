@@ -9,11 +9,10 @@ import { RouterModule } from "@angular/router";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MaterialModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 import 'hammerjs';
-
-
-
 
 @NgModule({
   declarations: [
@@ -28,16 +27,11 @@ import 'hammerjs';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
- 
-  
-    // MdInputModule, 
-    // MdButtonModule,
-    
-    // RouterModule.forRoot([
-    //   {path:'home', component:HomeComponent},
-    //   {path:'dashboard', component:DashboardComponent}
-
-    // ])
+    BrowserAnimationsModule,MdButtonModule,
+    MdMenuModule,
+    MdCardModule,
+    MdToolbarModule,
+    MdIconModule,
   ],
 
   providers: [],
