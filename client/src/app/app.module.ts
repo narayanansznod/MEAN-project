@@ -10,9 +10,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-// import { MdInputModule, MdButtonModule } from '@angular/material';
-// import { CdkTableModule } from '@angular/cdk';
-
 import 'hammerjs';
 
 
@@ -31,6 +28,8 @@ import 'hammerjs';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
+ 
+  
     // MdInputModule, 
     // MdButtonModule,
     
