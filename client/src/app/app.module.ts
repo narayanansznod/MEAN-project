@@ -7,11 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent, PizzaPartyComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MaterialModule } from '@angular/material';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
+import { MdIconModule } from '@angular/material';
+// import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 import 'hammerjs';
 
 @NgModule({
@@ -20,6 +21,7 @@ import 'hammerjs';
     NavbarComponent,
     HomeComponent,
     DashboardComponent,
+    PizzaPartyComponent
   ],
   imports: [
     BrowserModule,
@@ -27,13 +29,11 @@ import 'hammerjs';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule,MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdToolbarModule,
-    MdIconModule,
+    BrowserAnimationsModule,
+    MaterialModule, 
+    MdIconModule
   ],
-
+  entryComponents: [PizzaPartyComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
