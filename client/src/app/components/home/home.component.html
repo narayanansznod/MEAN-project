@@ -1,0 +1,117 @@
+
+<!-- <md-progress-bar mode="indeterminate"></md-progress-bar>
+<md-grid-list cols="2" rowHeight="2:1">
+  <md-grid-tile>1<i class="material-icons orange600">face</i></md-grid-tile>
+  <md-grid-tile>2</md-grid-tile>
+  <md-grid-tile>3</md-grid-tile>
+  <md-grid-tile>4</md-grid-tile>
+</md-grid-list> -->
+
+<!-- <md-tab-group>
+      <md-tab>
+        <ng-template md-tab-label>
+          The <em>best</em> pasta
+        </ng-template>
+        <h1>Best pasta restaurants</h1>
+        <p>...</p>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          The worst sushi
+        </ng-template>
+        <h1>Terrible sushi restaurants</h1>
+        <p>...</p>
+      </md-tab>
+    </md-tab-group> -->
+
+      <!-- <button class="pizzaButton"md-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+            Pizza party
+      </button>
+      <md-menu #appMenu="mdMenu">
+        <button md-menu-item> Settings </button>
+        <button md-menu-item> Help </button>
+      </md-menu> -->
+      
+      <!-- <button md-icon-button [mdMenuTriggerFor]="appMenu">
+         <md-icon>more_vert</md-icon>
+      </button>
+       -->
+          <br>
+          <br>
+          <br>
+          <form class="example-form">
+          
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><md-form-field class="example-full-width">
+                <input mdInput placeholder="First name">
+              </md-form-field></td>
+              <td><md-form-field class="example-full-width">
+                <input mdInput placeholder="Last name">
+              </md-form-field></td>
+            </tr></table>
+
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td> <md-form-field class="example-full-width">
+                <input type="text" placeholder="Gender" aria-label="Number" mdInput [formControl]="myControl" [mdAutocomplete]="auto">
+                <md-autocomplete #auto="mdAutocomplete">
+                  <md-option *ngFor="let option of options" [value]="option">
+                    {{ option }}
+                  </md-option>
+                </md-autocomplete>
+              </md-form-field></td>
+              <td>
+                <md-form-field>
+                  <input mdInput [mdDatepicker]="picker" placeholder="Date of birth">
+                  <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+                  <md-datepicker #picker startView="year" [startAt]="startDate"></md-datepicker>
+                </md-form-field>
+              </td>
+            </tr></table>
+          
+            <p>
+              <md-form-field class="example-full-width">
+                <textarea mdInput placeholder="Address"></textarea>
+              </md-form-field>
+            </p>
+          
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><md-form-field class="example-full-width">
+                <input mdInput placeholder="City">
+              </md-form-field></td>
+              <td><md-form-field class="example-full-width">
+                <input mdInput placeholder="State">
+              </md-form-field></td>
+              <td><md-form-field class="example-full-width">
+                <input mdInput #postalCode maxlength="5" placeholder="Postal Code" value="">
+                <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
+              </md-form-field></td>
+
+            </tr></table>
+
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td>
+                <md-form-field class="example-full-width">
+                  <input mdInput placeholder="Email" [formControl]="emailFormControl">
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+                    Please enter a valid email address
+                  </md-error>
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </md-error>
+                </md-form-field>
+              </td>
+              
+              <td>
+                <md-radio-group>
+                  <md-radio-button value="1">Option 1</md-radio-button>
+                  <md-radio-button value="2">Option 2</md-radio-button>
+                </md-radio-group>
+              </td>
+
+            </tr></table>
+
+            <button md-raised-button color="primary">Submit</button>
+            <button md-raised-button color="warn">Cancel</button>
+          </form>
+          
+     

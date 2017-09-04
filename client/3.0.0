@@ -1,0 +1,6 @@
+client@0.0.0 C:\Users\naray\MEAN-project-server-setup\client
++-- jquery@3.2.1 
+`-- ng2-materialize@1.5.1
+  `-- materialize-css@0.98.2
+    `-- jquery@2.2.4 
+
