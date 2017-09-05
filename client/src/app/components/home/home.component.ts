@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, NgModule } from '@angular/core';
-
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MdDatepickerModule, MdNativeDateModule } from "@angular/material";
 import { Observable } from "rxjs/Observable";
 
@@ -15,6 +15,11 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+
+  constructor(
+  private formBuilder: FormBuilder
+  ){}
 
   emailFormControl = new FormControl('', [
     Validators.required,
